@@ -11,7 +11,7 @@ Open source software (OSS) refers to software with source code that anyone can i
 Alpine Moodle is a lightweight version of the Moodle Learning Management System (LMS) tailored to run efficiently on Alpine Linux. Moodle is widely used for creating and managing online learning environments. This version is optimized for low-resource environments and ensures faster performance with a smaller footprint.
 
 **Guide:**
-- [Moodle](https://github.com/LEARN-LK/lms/blob/master/moodle-install.md)
+- [Moodle](https://github.com/LEARN-LK/lms/tree/master)
 
 
 ### **2. Kdenlive Video Editor**
