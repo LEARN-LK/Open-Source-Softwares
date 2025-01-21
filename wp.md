@@ -173,9 +173,39 @@ This method ensures WordPress is installed even if direct download issues occur.
 ## Troubleshoot Steps
 
 
-The "Error establishing a database connection" issue means WordPress is unable to connect to the database. Follow these steps to resolve it:
+The output you’ve shared is part of the process of fetching the Alpine Linux package repository index, usually performed during a package management operation such as `apk update` or while installing a package using `apk`.
 
 ---
+
+
+
+### If This Is an Issue in package update 
+If you’re facing any issues related to this, here’s what you can do:
+
+#### 1. **Check Internet Connectivity**
+   - Ensure that your system has a working internet connection. You can verify by pinging a site like Google:
+     ```bash
+     ping google.com
+     ```
+
+#### 2. **Update Repository Index**
+   - Run the following command to update the repository metadata:
+     ```bash
+     apk update
+     ```
+
+#### 3. **Check Repository Configuration**
+   - Ensure that the repository is correctly configured in `/etc/apk/repositories`. For Alpine v3.21, it should look like this:
+     ```text
+     http://dl-cdn.alpinelinux.org/alpine/v3.21/main
+     http://dl-cdn.alpinelinux.org/alpine/v3.21/community
+     ```
+---
+
+
+### The "Error establishing a database connection" issue means WordPress is unable to connect to the database. Follow these steps to resolve it:
+
+
 
 ### **1. Verify Database Credentials**
 Check the database credentials in `wp-config.php`:
