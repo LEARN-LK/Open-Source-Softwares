@@ -34,6 +34,16 @@ Virtual Classroom (VCR) is a term for online environments used for live teaching
 
 **Guide:**
 
+### **5. CapCut Video Editor**
+**Description:**
+
+CapCut is a free, user-friendly video editing app developed by ByteDance (the creators of TikTok). It is available for both mobile (iOS and Android) and desktop platforms. CapCut is widely used for creating short videos, vlogs, TikTok content, and more. It offers a wide range of editing tools, effects, and features that make it suitable for both beginners and advanced users.
+
+**Guide:**
+- [CapCut](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/CapCut.md)
+
+
+
 
 ---
 
