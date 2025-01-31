@@ -128,4 +128,3 @@ CapCut is a free, user-friendly video editing app developed by ByteDance (the cr
 
 ---
 
-If you need further clarification, let me know! Happy editing! 🎥✨
