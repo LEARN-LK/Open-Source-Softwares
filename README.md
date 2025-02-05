@@ -26,7 +26,8 @@ Kdenlive is a free, open-source video editor that supports multi-track editing, 
 WordPress is a popular open-source content management system (CMS) used to build websites and blogs. It is user-friendly and highly customizable with themes and plugins.
 
 **Guide:**
--[Wordpress](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/wp.md)
+- [Wordpress installation](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/wp.md)
+- [Practice Wordpress in VirtualBox(Alpine)](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/Practice-Wordpress.md) 
 
 ### **4. Virtual Classroom (VCR)**
 **Description:**
