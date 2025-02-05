@@ -57,7 +57,7 @@ CapCut is a free, user-friendly video editing app developed by ByteDance (the cr
 
 #### **3. Edit Video (Cut/Trim)**
 1. **Select the video** in the timeline.
-2. Tap the **“Split”** tool (scissors icon) to cut the video at a specific point.
+2. Tap the **“Split”** tool (][) to cut the video at a specific point.
 3. Drag the edges of the video clip to trim it shorter or longer.
 4. Delete unwanted sections by selecting the split clip and tapping the **Delete** icon.
 
