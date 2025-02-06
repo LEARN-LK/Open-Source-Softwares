@@ -53,4 +53,4 @@ This guide explains how to set up a `.vdi` file with Alpine Linux, configure it 
 
 ---
 
-Now you’re ready to use WordPress in VirtualBox! Let me know if you need any help. 🚀
+
