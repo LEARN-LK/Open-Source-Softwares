@@ -33,24 +33,113 @@ This guide explains how to set up a `.vdi` file with Alpine Linux, configure it 
 ## **Step 4: Start the WordPress VM**
 1. In VirtualBox, select the **imported VM**.
 2. Click **Start** to boot the VM.
+   Log in using:
+   - **Username**: `learn`
+   - **Password**: `wd123`
 
 ---
 
 ## **Step 5: Access WordPress**
-1. Open a browser **inside the VM**.
-2. Enter `http://localhost` or the assigned IP (e.g., `http://192.168.x.x`).
-3. You should see the **WordPress login page**.
+
+#### **5. Find the VM IP Address**:
+1. Inside the VM, type:
+   ```bash
+   ip addr
+   ```
+2. Note the IP address (e.g., `192.168.1.10`).
+
+
+
+#### **6. Map Wordpress to a Hostname on Host Machine**:
+- On the host machine, edit the `hosts` file to map the VM's IP to a hostname.
 
 ---
 
-## **Step 6: (Optional) Find the VM’s IP Address**
-- Open a terminal in the VM and run:
-  ```sh
-  ip a
-  ```
-- Look for the **inet** IP address (e.g., `192.168.x.x`).
-- Use this IP to access WordPress **from another device** on the same network.
+### **Edit Hosts File**
+
+#### **Windows**:
+1. Path:  
+   `C:\Windows\System32\drivers\etc\hosts`
+2. Open Notepad as an administrator and add your VM IP: eg:
+   ```
+   192.168.1.10 mywordpress.test.learn.ac.lk
+   ```
+
+#### **MacOS**:
+1. Path:  
+   `/private/etc/hosts`
+2. Open a terminal and edit the file:
+   ```bash
+   sudo nano /private/etc/hosts
+   ```
+3. Add:
+   ```
+   192.168.1.10 mywordpress.test.learn.ac.lk
+   ```
+
+#### **Linux**:
+1. Path:  
+   `/etc/hosts`
+2. Edit the file with:
+   ```bash
+   sudo nano /etc/hosts
+   ```
+3. Add:
+   ```
+   192.168.1.10 mywordpress.test.learn.ac.lk
+   ```
 
 ---
+### **7. Access Wordpress site from the Host Machine**:
+1. Open a browser on the host machine.
+2. Navigate to:
+   ```
+   http://mywordpress.test.learn.ac.lk
+   ```
+
+---
+
+
+### Notes for Users:
+- Ensure VirtualBox's network settings are set to **Bridged Adapter**.
+- Ensure the VM is running before accessing Wordpress site.
+- Default credentials for the VM:
+  - **Username**: `learn`
+  - **Password**: `wd123`
+
+This guide ensures users can easily import the `.ova` file, configure the VM, and start practicing Wordpress without additional setup.
+
+---
+
+### **Part 2: Troubleshooting**
+
+Site Not Loading Properly:
+
+Verify nginx and php-fpm services are running:
+ ``` bash
+rc-service nginx restart
+rc-service php-fpm82 restart
+```
+Error Messages:
+
+Check logs:
+``` bash
+
+tail -f /var/log/nginx/error.log
+```
+
+Renew DHCP Lease on Alpine Linux
+``` bash
+/etc/init.d/networking restart
+```
+then follow [Step 5](https://github.com/LEARN-LK/lms/blob/master/Practice-Moodle-VirtualBox.md#5-find-the-vm-ip-address)
+
+
+
+
+
+
+
+
 
 
