@@ -8,7 +8,7 @@ This guide explains how to set up a `.vdi` file with Alpine Linux, configure it 
 
 ## **Step 1: Download the WordPress OVA File**
 1. Open the Google Drive link:  
-   👉 [Download OVA File](https://drive.google.com/file/d/1qKhRPvUqG1lpz7ed28L0fCF5rGhm7jN6/view?usp=drive_link)
+   👉 [Download OVA File](https://drive.google.com/file/d/1SI7joc9LzE5GHOnyRr26jK6G78qTaUJQ/view?usp=drive_link)
 2. Click **Download** to save the `.OVA` file to your computer.
 
 ---
