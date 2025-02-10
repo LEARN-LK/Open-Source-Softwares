@@ -28,7 +28,7 @@ WordPress is a popular open-source content management system (CMS) used to build
 **Guide:**
 - [Wordpress installation](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/wp.md)
 - [Practice Wordpress in VirtualBox(Alpine)](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/Practice-Wordpress.md)
-- [Using WordPress, build your own website]()
+- [Using WordPress, build your own website](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/build-website.md)
 
 ### **4. Virtual Classroom (VCR)**
 **Description:**
