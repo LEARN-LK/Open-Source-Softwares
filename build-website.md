@@ -6,4 +6,5 @@ WordPress is one of the most popular and user-friendly platforms for creating we
 
 Using WordPress, build your own website. This guide covers how to create a website. First, you should have an idea of the design you want to create. In this guide, I will walk you through building a website based on the attached wireframe. 
 
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/%5Cwireframe.jpeg" alt="image" style="max-width: 100%;width: 500px;">
 
