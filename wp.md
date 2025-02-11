@@ -200,7 +200,12 @@ rc-service php-fpm82 restart
    define('DB_PASSWORD', 'wd123');
    define('DB_HOST', 'localhost');
    ```
+3. Force direct file system access (to avoid FTP issues):
+```php
+define('FS_METHOD', 'direct');
+ ```
 
+   
 ---
 
 ### **Step 10: Finalize Installation**
@@ -218,6 +223,63 @@ rc-service php-fpm82 restart
 3. Follow the WordPress setup wizard to complete the installation.
 
 ---
+
+# **Step 11: Install Plugins**
+### **Method 1: Automatic Plugin Installation**
+1. Log in to **WordPress Dashboard**.
+2. Go to **Plugins → Add New**.
+3. Search for a plugin (e.g., Classic Editor).
+4. Click **Install Now** and then **Activate**.
+
+---
+
+### **Method 2: Manual Plugin Installation**
+1. Download the plugin:
+   ```sh
+   cd /var/www/wordpress/wp-content/plugins/
+   wget https://downloads.wordpress.org/plugin/classic-editor.zip
+   ```
+2. Extract the plugin:
+   ```sh
+   unzip classic-editor.zip
+   rm classic-editor.zip
+   ```
+3. Set correct permissions:
+   ```sh
+   chown -R nginx:nginx /var/www/wordpress/wp-content/plugins/
+   chmod -R 775 /var/www/wordpress/wp-content/plugins/
+   ```
+4. Go to **WordPress Dashboard → Plugins** and **Activate** the plugin.
+
+---
+
+### **Step 12: Set Correct Upload Permissions**
+If you see **"Unable to create directory"** or **"Uploaded file could not be moved"**, run:
+
+```sh
+chown -R nginx:nginx /var/www/wordpress/wp-content/uploads
+chmod -R 775 /var/www/wordpress/wp-content/uploads
+```
+
+Restart PHP and Nginx:
+
+```sh
+rc-service php-fpm82 restart
+rc-service nginx restart
+```
+
+---
+
+### **Step 13: Enable HTTPS (Optional)**
+If using a domain, install **Let's Encrypt SSL**:
+
+```sh
+apk add certbot certbot-nginx
+certbot --nginx -d mywordpress.test.learn.ac.lk
+```
+
+---
+
 
 ## Troubleshoot Steps
 
