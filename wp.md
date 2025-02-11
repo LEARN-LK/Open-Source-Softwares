@@ -74,8 +74,35 @@ apk add nginx php82 php82-fpm php82-mysqli php82-xml php82-mbstring php82-curl p
    ```
 
 ---
+### **Step 5: Increase File Upload Limit in Nginx**
+1. Edit the Nginx configuration:
+   ```bash
+      nano /etc/nginx/nginx.conf
+   ```
+2. Add the following inside the http {} block:
+   ```bash
+   client_max_body_size 100M;
+    ```
+3. Save and restart Nginx:
+ ```bash  
+rc-service nginx restart
+ ```
+4. Also, edit PHP settings:
+```bash
+nano /etc/php82/php.ini
+```
+5. Find and update these values:
+```bash
+upload_max_filesize = 100M
+post_max_size = 100M
+Save and restart PHP-FPM:
+rc-service php-fpm82 restart
+```
 
-### **Step 5: Configure MariaDB**
+
+---
+
+### **Step 6: Configure MariaDB**
 1. Start and secure MariaDB:
    ```bash
    rc-service mariadb setup
@@ -98,7 +125,7 @@ apk add nginx php82 php82-fpm php82-mysqli php82-xml php82-mbstring php82-curl p
 
 ---
 
-### **Step 6: Download WordPress**
+### **Step 7: Download WordPress**
 1. **Preferred Method: Using `wget` or `curl`**
    ```bash
    wget https://wordpress.org/latest.tar.gz
@@ -130,7 +157,7 @@ apk add nginx php82 php82-fpm php82-mysqli php82-xml php82-mbstring php82-curl p
 
 ---
 
-### **Step 7: Configure WordPress**
+### **Step 8: Configure WordPress**
 1. Create a configuration file:
    ```bash
    cp /var/www/wordpress/wp-config-sample.php /var/www/wordpress/wp-config.php
@@ -150,7 +177,7 @@ apk add nginx php82 php82-fpm php82-mysqli php82-xml php82-mbstring php82-curl p
 
 ---
 
-### **Step 8: Finalize Installation**
+### **Step 9: Finalize Installation**
 1. Restart all services:
    ```bash
    rc-service nginx restart
@@ -165,10 +192,6 @@ apk add nginx php82 php82-fpm php82-mysqli php82-xml php82-mbstring php82-curl p
 3. Follow the WordPress setup wizard to complete the installation.
 
 ---
-
-This method ensures WordPress is installed even if direct download issues occur. Let me know if you need help troubleshooting further!
-
-
 
 ## Troubleshoot Steps
 
