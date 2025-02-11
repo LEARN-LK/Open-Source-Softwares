@@ -102,7 +102,33 @@ rc-service php-fpm82 restart
 
 ---
 
-### **Step 6: Configure MariaDB**
+
+## **Step 6: Increase PHP Upload Limits in Alpine Linux**
+1. Open the PHP configuration file:
+   ```sh
+   nano /etc/php82/php.ini
+   ```
+2. Find and update these values:
+   ```ini
+   max_execution_time = 300
+   max_input_time = 300
+   memory_limit = 512M
+   upload_max_filesize = 100M
+   post_max_size = 100M
+   ```
+   *(Adjust values if needed.)*
+
+3. Save and exit (`CTRL + X`, then `Y`, then `Enter`).
+
+4. Restart PHP-FPM:
+   ```sh
+   rc-service php-fpm82 restart
+   ```
+
+---
+
+
+### **Step 7: Configure MariaDB**
 1. Start and secure MariaDB:
    ```bash
    rc-service mariadb setup
@@ -125,7 +151,7 @@ rc-service php-fpm82 restart
 
 ---
 
-### **Step 7: Download WordPress**
+### **Step 8: Download WordPress**
 1. **Preferred Method: Using `wget` or `curl`**
    ```bash
    wget https://wordpress.org/latest.tar.gz
@@ -157,7 +183,7 @@ rc-service php-fpm82 restart
 
 ---
 
-### **Step 8: Configure WordPress**
+### **Step 9: Configure WordPress**
 1. Create a configuration file:
    ```bash
    cp /var/www/wordpress/wp-config-sample.php /var/www/wordpress/wp-config.php
@@ -177,7 +203,7 @@ rc-service php-fpm82 restart
 
 ---
 
-### **Step 9: Finalize Installation**
+### **Step 10: Finalize Installation**
 1. Restart all services:
    ```bash
    rc-service nginx restart
