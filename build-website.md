@@ -47,15 +47,30 @@ Here are the required plugins:
 
 ### **Step 5: Build Each Section of the Homepage**  
 
+Now, we will create each section based on your wireframe.  
+
 #### **1. Logo Section**  
-1. Go to **Appearance → Customize → Site Identity**.  
-2. Upload your logo and adjust the size.  
+- Go to **WordPress Dashboard → Appearance → Customize**.  
+- Click on **Site Identity**.  
+- Upload your **logo** and click **Publish**.  
+
+---
 
 #### **2. Menu Section**  
-1. Go to **Appearance → Menus**.  
-2. Create a menu with items like **Home, Services, About, Contact Us**.  
-3. Assign the menu to the **header location**.  
+✅ **Before creating the menu, first create the necessary pages (Service, Contact, About).**  
 
+1. Go to **Dashboard → Pages → Add New**.  
+2. Create and publish these pages:  
+   - **Service**  
+   - **Contact**  
+   - **About**  
+3. Now, go to **Appearance → Menus**.  
+4. Click **Create a New Menu** and name it **Main Menu**.  
+5. Add the pages (Home, Service, Contact, About) to the menu.  
+6. Select **Primary Menu** and click **Save Menu**.  
+
+---
+  
 #### **3. Slider Section**  
 1. Install **Smart Slider 3**.  
 2. Go to **Smart Slider → Add New**, and create a slider with images and text.  
