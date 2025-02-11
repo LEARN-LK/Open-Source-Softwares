@@ -92,5 +92,5 @@ Here are the required plugins:
 ---
 
 Now your WordPress website is fully built based on your **wireframe**! 🎉  
-Would you like help with **customizing styles (CSS), SEO, or additional functionality?** 🚀
+
 
