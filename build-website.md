@@ -50,9 +50,28 @@ Here are the required plugins:
 Now, we will create each section based on your wireframe.  
 
 #### **1. Logo Section**  
-- Go to **WordPress Dashboard → Appearance → Customize**.  
-- Click on **Site Identity**.  
-- Upload your **logo** and click **Publish**.  
+- Go to **WordPress Dashboard** [1] → **Appearance** [2] → **Themes**[3] → **Customize**[4].
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-01.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-02.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+  
+- Click on **Site Identity (⋮)** [5] → **Delete it**[6].
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-03.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+  
+- Click on **+ ICON** [7].
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-04.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+- **Search and Insert The Logo** [8]
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-05.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+  
+- Click on **Choose the Logo**[9]
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-06.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+- Upload your **logo** and click **Publish**.
+  
+  <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-07.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+ 
+  <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-08.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
 ---
 
