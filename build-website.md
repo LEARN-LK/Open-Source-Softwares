@@ -75,18 +75,28 @@ Now, we will create each section based on your wireframe.
 
 ---
 
+
 #### **2. Menu Section**  
 ✅ **Before creating the menu, first create the necessary pages (Service, Contact, About).**  
 
-1. Go to **Dashboard → Pages → Add New**.  
-2. Create and publish these pages:  
+1. Go to **Dashboard** [12] → **Pages**[13] → **Add New**[14].
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-09.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+3. Choose the design [15], then Create and publish these pages [16]:  
    - **Service**  
    - **Contact**  
-   - **About**  
-3. Now, go to **Appearance → Menus**.  
-4. Click **Create a New Menu** and name it **Main Menu**.  
-5. Add the pages (Home, Service, Contact, About) to the menu.  
-6. Select **Primary Menu** and click **Save Menu**.  
+   - **About**
+
+ <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-10.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+ <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-11.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+4. The menu will be automatically added to the designed page [17]. If it is not applied, follow the steps below:
+ <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-12.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+5. Go to **Appearance → Menus**.  
+6. Click **Create a New Menu** and name it **Main Menu**.  
+7. Add the pages (**Home, Service, Contact, About**) to the menu.  
+8. Select **Primary Menu** and click **Save Menu**.  
 
 ---
   
