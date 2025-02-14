@@ -100,35 +100,62 @@ Now, we will create each section based on your wireframe.
 
 ---
   
-#### **3. Slider Section**  
-1. Install **Smart Slider 3**.  
-2. Go to **Smart Slider → Add New**, and create a slider with images and text.  
-3. Add the slider to the homepage using the **Elementor "Smart Slider" widget**.  
+### **Step 3: Add the Slider to the Homepage**  
 
-#### **4. Content Section (Two Columns: Text & Image)**  
-1. Open the homepage in **Elementor**.  
-2. Add a **two-column section**.  
-3. Insert a **Text Editor** widget in the first column (for content).  
-4. Insert an **Image** widget in the second column.  
+#### **Using the Site Editor (Full Site Editing - FSE)**  
 
-#### **5. Our Services Section (Four Columns)**  
-1. Add a **four-column section** in Elementor.  
-2. In each column, add:  
-   - **Image widget** (for service image).  
-   - **Text Editor widget** (for service description).  
+1. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
+2. Navigate to the **Homepage** template.  
+3. Click **+ (Add Block)** and search for **Shortcode** or **Smart Slider 3 Block**.  
+4. Click on the **Smart Slider block** to add it to the page.  
+5. Click on the **slideshow edit settings**.  
+6. Click **Add New → Select a slider type**.  
+7. Upload your images and add text if needed.  
+8. Click **Save** once the slider is ready.  
+ 
 
-#### **6. Two-Column Section (Image & Text)**  
-1. Add another **two-column section**.  
-2. Place an **Image** widget in the left column.  
-3. Place a **Text Editor** widget in the right column.  
-
-#### **7. Footer Section**  
-1. Go to **Appearance → Widgets**.  
-2. Add widgets for **copyright, social media, and contact info**.  
+#### **Step 4 : Content Section (Two Columns: Text & Image)**  
+1. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
+2. Navigate to the **Homepage** template.  
+3. Click **+ (Add Block)** and add a **Columns block** (select the **two-column layout**).  
+4. In the **first column**, click **+ (Add Block)** and select the **Paragraph block** to add text content.  
+5. In the **second column**, click **+ (Add Block)** and select the **Image block** to upload an image.  
+6. Click **Save** to apply changes.  
 
 ---
 
-### **Step 6: Test & Launch**  
+#### **Step 5: Our Services Section (Four Columns)**  
+1. In the **Site Editor**, go to the **Homepage** template.  
+2. Click **+ (Add Block)** and add a **Columns block** (select the **four-column layout**).  
+3. In each column, do the following:  
+   - Click **+ (Add Block)** and insert an **Image block** (upload an image for the service).  
+   - Click **+ (Add Block)** and insert a **Paragraph block** (write a short description for the service).  
+4. Click **Save** to apply changes.  
+
+---
+
+#### **Step 6: Two-Column Section (Image & Text)**  
+1. In the **Site Editor**, navigate to the **Homepage** template.  
+2. Click **+ (Add Block)** and add a **Columns block** (select the **two-column layout**).  
+3. In the **first column**, click **+ (Add Block)** and select an **Image block** to upload an image.  
+4. In the **second column**, click **+ (Add Block)** and select a **Paragraph block** to add text.  
+5. Click **Save** to apply changes.  
+
+---
+
+#### **Step 7: Footer Section**  
+1. Go to **Dashboard → Appearance → Editor (Site Editor) → Footer**.  
+2. Click **+ (Add Block)** and insert relevant widgets:  
+   - **Paragraph block** for copyright text.  
+   - **Social Icons block** for social media links.  
+   - **Columns block** to arrange contact info, address, and other footer details.  
+3. Click **Save** to apply changes.  
+
+---
+
+Now, your homepage is fully built using the **Full Site Editor (FSE)**!
+
+### **Step 8: Test & Launch**  
 ✅ Check mobile and tablet responsiveness using **Customize → Mobile Preview**.  
 ✅ Optimize the site speed using **WP Rocket or LiteSpeed Cache**.  
 ✅ Deploy the website by linking your **domain name** to your **hosting provider**.  
