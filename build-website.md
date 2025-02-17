@@ -106,21 +106,34 @@ Now, we will create each section based on your wireframe.
 
 1. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
 2. Navigate to the **Homepage** template.  
-3. Click **+ (Add Block)** and search for **Shortcode** or **Smart Slider 3 Block**.  
+3. Click **+ (Add Block)** [18] and search for **Shortcode** or **Smart Slider 3 Block** [19].
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-13.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-14.png?raw=true" alt="image" style="max-width: 100%;width: 500px;"> 
+   
 4. Click on the **Smart Slider block** to add it to the page.  
-5. Click on the **slideshow edit settings**.  
-6. Click **Add New → Select a slider type**.  
-7. Upload your images and add text if needed.  
-8. Click **Save** once the slider is ready.  
+5. Click on the **slideshow edit settings** [20].
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-15.png?raw=true" alt="image" style="max-width: 100%;width: 500px;"> 
+
+7. Click **Add New → Select a slider type**.  
+8. Upload your images and add text if needed.
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-16.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+   
+10. Click **Save** once the slider is ready.  
  
 
 #### **Step 4 : Content Section (Two Columns: Text & Image)**  
 1. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
 2. Navigate to the **Homepage** template.  
-3. Click **+ (Add Block)** and add a **Columns block** (select the **two-column layout**).  
-4. In the **first column**, click **+ (Add Block)** and select the **Paragraph block** to add text content.  
-5. In the **second column**, click **+ (Add Block)** and select the **Image block** to upload an image.  
-6. Click **Save** to apply changes.  
+3. Click **+ (Add Block)** and add a **Columns block**[22] (select the **two-column layout**)[23].
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+   
+5. In the **first column**, click **+ (Add Block)** and select the **Paragraph block** [24] to add text content.
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-18.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+6. In the **second column**, click **+ (Add Block)** and select the **Image block** [25]to upload an image.
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-19.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+7. Click **Save** to apply changes.  
 
 ---
 
