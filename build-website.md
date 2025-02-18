@@ -1,4 +1,4 @@
-**Using WordPress, Build Your Own Website**  
+## **Using WordPress, Build Your Own Website**  
 
 WordPress is one of the most popular and user-friendly platforms for creating websites, whether for personal projects, businesses, or blogs. This guide will walk you through the step-by-step process of building your own website using WordPress. From planning your design to setting up pages and customizing your site, you'll learn how to create a professional and functional website with ease.
 
@@ -100,7 +100,7 @@ Now, we will create each section based on your wireframe.
 
 ---
   
-### **Step 3: Add the Slider to the Homepage**  
+### **3: Add the Slider to the Homepage**  
 
 #### **Using the Site Editor (Full Site Editing - FSE)**  
 
@@ -119,9 +119,9 @@ Now, we will create each section based on your wireframe.
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-16.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
    
 10. Click **Save** once the slider is ready.  
- 
+ ---
 
-#### **Step 4 : Content Section (Two Columns: Text & Image)**  
+#### **4 : Content Section (Two Columns: Text & Image)**  
 1. Go to **Dashboard → Appearance → Editor (Site Editor)**.  
 2. Navigate to the **Homepage** template.  
 3. Click **+ (Add Block)** and add a **Columns block**[22] (select the **two-column layout**)[23].
@@ -137,7 +137,7 @@ Now, we will create each section based on your wireframe.
 
 ---
 
-#### **Step 5: Our Services Section (Four Columns)**  
+#### **5: Our Services Section (Four Columns)**  
 1. In the **Site Editor**, go to the **Homepage** template.  
 2. Click **+ (Add Block)** and add a **Columns block** (select the **four-column layout**).  
 3. In each column, do the following:  
@@ -147,7 +147,7 @@ Now, we will create each section based on your wireframe.
 
 ---
 
-#### **Step 6: Two-Column Section (Image & Text)**  
+#### **6: Two-Column Section (Image & Text)**  
 1. In the **Site Editor**, navigate to the **Homepage** template.  
 2. Click **+ (Add Block)** and add a **Columns block** (select the **two-column layout**).  
 3. In the **first column**, click **+ (Add Block)** and select an **Image block** to upload an image.  
@@ -156,7 +156,7 @@ Now, we will create each section based on your wireframe.
 
 ---
 
-#### **Step 7: Footer Section**  
+#### **7: Footer Section**  
 1. Go to **Dashboard → Appearance → Editor (Site Editor) → Footer**.  
 2. Click **+ (Add Block)** and insert relevant widgets:  
    - **Paragraph block** for copyright text.  
@@ -168,13 +168,15 @@ Now, we will create each section based on your wireframe.
 
 Now, your homepage is fully built using the **Full Site Editor (FSE)**!
 
-### **Step 8: Test & Launch**  
+### **8: Test & Launch**  
 ✅ Check mobile and tablet responsiveness using **Customize → Mobile Preview**.  
 ✅ Optimize the site speed using **WP Rocket or LiteSpeed Cache**.  
 ✅ Deploy the website by linking your **domain name** to your **hosting provider**.  
 
 ---
 
-Now your WordPress website is fully built based on your **wireframe**! 🎉  
+**"Now your WordPress website is fully built based on your wireframe! Here is the final output."** 
+
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-20.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
 
