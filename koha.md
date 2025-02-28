@@ -148,5 +148,6 @@ sudo systemctl restart apache2
 ### **Koha is now fully installed and ready to use!** 🚀
 
 https://koha-community.org/manual/24.11/en/html/installation.html
+
 https://wiki.koha-community.org/wiki/Koha_on_ubuntu_-_packages
 
