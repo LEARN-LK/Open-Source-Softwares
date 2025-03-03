@@ -110,8 +110,8 @@ This guide explains how to set up a `.vdi` file with Alpine Linux, configure it 
 This guide ensures users can easily import the `.ova` file, configure the VM, and start practicing Wordpress without additional setup.
 
 ---
-
-### **Part 2: Troubleshooting**
+<!--
+ ### **Part 2: Troubleshooting**
 
 Site Not Loading Properly:
 
@@ -135,7 +135,7 @@ Renew DHCP Lease on Alpine Linux
 then follow [Step 5](https://github.com/LEARN-LK/lms/blob/master/Practice-Moodle-VirtualBox.md#5-find-the-vm-ip-address)
 
 
-
+-->
 
 
 
