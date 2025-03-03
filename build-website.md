@@ -8,7 +8,7 @@ Using WordPress, build your own website. This guide covers how to create a websi
 
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/%5Cwireframe.jpeg" alt="image" style="max-width: 100%;width: 500px;">
 
-Here’s a step-by-step guide to creating your website using WordPress based on your wireframe:
+Here’s a step-by-step guide to creating your website using WordPress based on above wireframe:
 
 ---
 
