@@ -13,7 +13,8 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 ---
 
 ### **Step 1: Set Up WordPress**  
-1. Log in to the WordPress dashboard by going to **yourdomain.com/wp-admin**.  
+1. Log in to the WordPress dashboard by going to **yourdomain.com/wp-admin**.
+   - eg: mywordpress.test.learn.ac.lk/wp-admin
 
 ---
 
