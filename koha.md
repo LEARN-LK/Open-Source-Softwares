@@ -161,7 +161,6 @@ sudo koha-enable-sip library
 sudo systemctl restart apache2
 ```
 
-### **Koha is now fully installed and ready to use with Apache!** 🚀
 
 
 https://koha-community.org/manual/24.11/en/html/installation.html
