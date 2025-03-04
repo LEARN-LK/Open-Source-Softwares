@@ -1,6 +1,5 @@
 # Complete Koha Installation Guide on Ubuntu 24 Server
 
-
 ## **1. System Preparation**
 ### **Update and Upgrade the System**
 ```bash
@@ -61,7 +60,13 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-## **5. Create Koha Instance**
+## **5. Enable Required Apache Modules**
+```bash
+sudo a2enmod rewrite cgi headers proxy_http mpm_itk
+sudo systemctl restart apache2
+```
+
+## **6. Create Koha Instance**
 ```bash
 sudo koha-create --create-db library
 ```
@@ -70,13 +75,7 @@ Verify database tables:
 sudo koha-mysql library -e "SHOW TABLES;"
 ```
 
-## **6. Configure Apache for Koha**
-Enable required Apache modules:
-```bash
-sudo a2enmod rewrite cgi headers proxy_http
-sudo systemctl restart apache2
-```
-
+## **7. Configure Apache for Koha**
 Edit the Koha Apache configuration file:
 ```bash
 sudo nano /etc/apache2/sites-enabled/library.conf
@@ -101,7 +100,7 @@ Restart Apache:
 sudo systemctl restart apache2
 ```
 
-## **7. Start Koha Services**
+## **8. Start Koha Services**
 ```bash
 sudo koha-plack --start library
 sudo koha-zebra --start library
@@ -114,11 +113,11 @@ sudo koha-plack --status library
 sudo koha-zebra --status library
 ```
 
-## **8. Access Koha Web Interface**
+## **9. Access Koha Web Interface**
 - **OPAC:** http://library.myDNSname.org/
 - **Staff Interface:** http://library-intra.myDNSname.org/
 
-## **9. Create a Superuser**
+## **10. Create a Superuser**
 Run the following command and follow prompts:
 ```bash
 sudo koha-create --create-db library
@@ -137,7 +136,7 @@ Exit MariaDB:
 EXIT;
 ```
 
-## **10. Set Up Background Jobs (Optional)**
+## **11. Set Up Background Jobs (Optional)**
 Enable and start Koha cron jobs:
 ```bash
 sudo koha-enable-sip library
@@ -145,9 +144,5 @@ sudo koha-enable-sip library
 sudo systemctl restart apache2
 ```
 
-### **Koha is now fully installed and ready to use!** 🚀
 
-https://koha-community.org/manual/24.11/en/html/installation.html
-
-https://wiki.koha-community.org/wiki/Koha_on_ubuntu_-_packages
 
