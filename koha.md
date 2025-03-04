@@ -1,5 +1,6 @@
 # Complete Koha Installation Guide on Ubuntu 24 Server
 
+
 ## **1. System Preparation**
 ### **Update and Upgrade the System**
 ```bash
@@ -70,9 +71,25 @@ sudo systemctl restart apache2
 ```bash
 sudo koha-create --create-db library
 ```
+If the instance is not created, check logs:
+```bash
+sudo journalctl -xe | grep koha
+```
 Verify database tables:
 ```bash
 sudo koha-mysql library -e "SHOW TABLES;"
+```
+If no tables appear, check the database:
+```bash
+sudo mariadb -u root -p
+SHOW DATABASES;
+```
+Ensure `koha_library` exists. If not, recreate it manually:
+```sql
+CREATE DATABASE koha_library;
+GRANT ALL PRIVILEGES ON koha_library.* TO 'koha'@'localhost' IDENTIFIED BY 'yourpassword';
+FLUSH PRIVILEGES;
+EXIT;
 ```
 
 ## **7. Configure Apache for Koha**
@@ -144,5 +161,11 @@ sudo koha-enable-sip library
 sudo systemctl restart apache2
 ```
 
+### **Koha is now fully installed and ready to use with Apache!** 🚀
+
+
+https://koha-community.org/manual/24.11/en/html/installation.html
+
+https://wiki.koha-community.org/wiki/Koha_on_ubuntu_-_packages
 
 
