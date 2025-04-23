@@ -56,7 +56,7 @@ DSpace is an open-source repository software platform used by institutions to st
 
 
 **Guide:**
-- [https://github.com/LEARN-LK/DSpace/blob/main/README.md]
+- [DSpace](https://github.com/LEARN-LK/DSpace/blob/main/README.md)
 
 ---
 
