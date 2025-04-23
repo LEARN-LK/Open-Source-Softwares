@@ -52,8 +52,11 @@ CapCut is a free, user-friendly video editing app developed by ByteDance (the cr
 
 ### **6. DSpace**
 **Description:**
+DSpace is an open-source repository software platform used by institutions to store, manage, and share digital content like research papers, theses, dissertations, images, and videos. It is widely used in universities, research centers, and libraries for long-term preservation and easy access to digital assets.
+
 
 **Guide:**
+- [https://github.com/LEARN-LK/DSpace/blob/main/README.md]
 
 ---
 
