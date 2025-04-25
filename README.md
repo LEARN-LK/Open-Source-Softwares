@@ -39,6 +39,7 @@ Kdenlive is a free, open-source video editor that supports multi-track editing, 
 Virtual Classroom (VCR) is a term for online environments used for live teaching and interaction. Many platforms, like BigBlueButton or Zoom, provide VCR functionalities, such as live video, screen sharing, and collaborative tools.
 
 **Guide:**
+- [VCR](https://vcr.learn.ac.lk/userguide/)
 
 
 <!-- ### **6. CapCut Video Editor**
