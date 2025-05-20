@@ -18,14 +18,14 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-### **Step 2: Choose & Install a Theme**  
+### **Step 2 (Optional): Choose & Install a Theme**  
 1. Go to **Appearance → Themes → Add New**.  
 2. Search for a lightweight theme like **Astra, GeneratePress, or OceanWP**.  
 3. Click **Install**, then **Activate** the theme.  
 
 ---
 
-### **Step 3: Install Essential Plugins**  
+### **Step 3 ((Optional)): Install Essential Plugins**  
 To install a plugin:  
 1. Go to **Plugins → Add New**.  
 2. Search for the plugin name.  
