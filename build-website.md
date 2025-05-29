@@ -27,7 +27,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-### **Step 3 (Optional): Install Essential Plugins**  
+### **Step 3 : Install Essential Plugins**  
 To install a plugin:  
 1. Go to **Plugins → Add New**.  
 2. Search for the plugin name.  
@@ -36,9 +36,9 @@ To install a plugin:
 Here are the required plugins:  
 ✅ **Elementor** – For page building.  
 ✅ **Smart Slider 3** – For the homepage slider.  
-✅ **Contact Form 7** – For contact forms.  
-✅ **Yoast SEO** – For search engine optimization.  
-✅ **WP Rocket or LiteSpeed Cache** – For website speed optimization.  
+✅ **Contact Form 7** – For contact forms (Optional).  
+✅ **Yoast SEO** – For search engine optimization (Optional).  
+✅ **WP Rocket or LiteSpeed Cache** – For website speed optimization (Optional).  
 
 ---
 
