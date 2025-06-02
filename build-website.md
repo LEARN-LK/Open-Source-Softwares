@@ -43,7 +43,7 @@ Here are the required plugins:
 ---
 
 ### **Step 4: Create the Homepage & Set It as the Default Page**  
-1. Go to **Pages → Add New**, name it **"Home"**, and click **Publish**.  
+1. Go to **Pages (DashBoard) → Add New**, name it **"Home"**, and click **Publish**.  
 2. Go to **Settings → Reading**, select **"A static page"**, and choose **"Home"**.  
 
 ---
