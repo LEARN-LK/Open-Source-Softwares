@@ -44,8 +44,9 @@ Here are the required plugins:
 
 ### **Step 4: Create the Homepage & Set It as the Default Page**  
 1. Go to **Pages (DashBoard) → Add New**, name it **"Home"**, and click **Publish**.  
-2. Go to **Settings → Reading**, select **"A static page"**, and choose **"Home"**.  
-
+2. Go to **Settings → Reading**, select **"A static page"**, and choose **"Home"**.
+   <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/Reading.png" alt="image" style="max-width: 100%;width: 500px;">
+   <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/Static.png" alt="image" style="max-width: 100%;width: 500px;">
 ---
 
 ### **Step 5: Build Each Section of the Homepage**  
