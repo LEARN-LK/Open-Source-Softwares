@@ -137,7 +137,13 @@ Now, we will create each section based on your wireframe.
 6. In the **second column**, click **+ (Add Block)** and select the **Image block** [25]to upload an image.
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-19.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
-7. Click **Save** to apply changes.  
+7.for full  width coloumn follow the  following steps
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+
+
+8. Click **Save** to apply changes.  
 
 ---
 
