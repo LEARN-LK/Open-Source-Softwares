@@ -138,9 +138,10 @@ Now, we will create each section based on your wireframe.
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-19.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
 7.for full  width coloumn follow the  following steps
-<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
-<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-17.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/fullwidth.jpeg" alt="image" style="max-width: 100%;width: 600px;">
+
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/fullwidth-2.jpeg" alt="image" style="max-width: 100%;width: 600px;">
 
 
 8. Click **Save** to apply changes.  
