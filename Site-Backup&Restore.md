@@ -1,4 +1,4 @@
-##  Move Your WordPress Site Easily with UpdraftPlus (Complete Friendly Guide)
+##  Move Your WordPress Site Easily with UpdraftPlus.
 
 So you’re shifting your WordPress site — maybe from a test domain like `mymoodle.test.learn.ac.lk` to a new server or IP address like `192.248.##.###`. Whether you're changing hosts or just switching IPs, **UpdraftPlus** makes the move smooth.
 
