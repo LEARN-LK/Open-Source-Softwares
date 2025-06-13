@@ -169,12 +169,6 @@ Done! Your site’s internal links and navigation should now work properly.
 
 ---
 
-## You Did It! Your WordPress Site Has Been Successfully Migrated 
-
-You moved your whole WordPress site to a new location without touching a single line of code.
-
----
-
 ### Tip: Automate Backups (Optional but Recommended)
 
 Now that you’ve installed UpdraftPlus, you can:
