@@ -25,18 +25,17 @@ You’ll need this plugin on **both** the old site and the new one.
    
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/plugin-install1.png" alt="image" style="max-width: 100%;width: 300px;">
 
-4. In the search bar, type [3]:
+3. In the search bar, type [3]:
    `UpdraftPlus`
 
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/pg-install-2.png" alt="image" style="max-width: 100%;width: 500px;">
 
-5. Find **“UpdraftPlus WordPress Backup Plugin”** and click:
+4. Find **“UpdraftPlus WordPress Backup Plugin”** and click:
     **Install Now* [5]*
 
-6. Once installed, click:
+5. Once installed, click:
     **Activate[6]**
-
-   
+  
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/pg-activation3.png" alt="image" style="max-width: 100%;width: 500px;">
 
 You’re now ready to start the backup and migration process!
