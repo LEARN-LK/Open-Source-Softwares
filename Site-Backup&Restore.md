@@ -23,7 +23,7 @@ You’ll need this plugin on **both** the old site and the new one.
 2. Go to:
    **Plugins [1] → Add New  [2]**
    
-<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/plugin-install1.png" alt="image" style="max-width: 100%;width: 500px;">
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/plugin-install1.png" alt="image" style="max-width: 100%;width: 300px;">
 
 4. In the search bar, type [3]:
    `UpdraftPlus`
