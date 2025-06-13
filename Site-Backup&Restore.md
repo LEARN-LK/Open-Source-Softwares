@@ -110,9 +110,10 @@ Now it’s time to “unpack” your old site.
 ## Step 4: Restore the Site on the New Server
 
 1. Click the **Restore** button next to the uploaded backup
-   <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/restore%20backup2.png" alt="image" style="max-width: 100%;width: 300px;">
 
-2. Choose what to restore:
+    <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/restore%20backup2.png" alt="image" style="max-width: 100%;width: 400px;">
+
+3. Choose what to restore:
 
    *  Plugins
    *  Themes
@@ -124,9 +125,9 @@ Now it’s time to “unpack” your old site.
 
  It's Take a short tike — UpdraftPlus will rebuild your entire site exactly as it was.
 
- <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/bk-restore4.png" alt="image" style="max-width: 100%;width: 200px;">
- <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/restore5.png" alt="image" style="max-width: 100%;width: 200px;">
- <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/restore6.png" alt="image" style="max-width: 100%;width: 200px;">
+ <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/bk-restore4.png" alt="image" style="max-width: 100%;width: 300px;">
+ <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/restore5.png" alt="image" style="max-width: 100%;width: 300px;">
+ <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/restore6.png" alt="image" style="max-width: 100%;width: 300px;">
 
 ---
 
