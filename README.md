@@ -61,3 +61,17 @@ DSpace is an open-source repository software platform used by institutions to st
 
 ---
 
+### **7. Indico**
+**Description:**
+**Indico** is an open-source event and conference management platform developed by [CERN](https://cern.ch). It is designed to help academic, research, and educational institutions manage:
+
+* Conferences
+* Workshops
+* Seminars
+* Lectures
+* Committee meetings
+
+Indico handles everything from **event creation** and **abstract submission** to **registration**, **scheduling**, **payment processing**, and **certification** — all from a single web-based interface.
+
+**Guide**
+- [Indico](https://github.com/LEARN-LK/Indico/edit/main/README.md)
