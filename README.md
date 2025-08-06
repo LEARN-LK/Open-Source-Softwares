@@ -6,7 +6,7 @@ Open source software (OSS) refers to software with source code that anyone can i
 
 ## **Descriptions and Guides for Specific Software**
 
-### **1. Alpine Moodle**
+### **1. Moodle**
 **Description:**
 Alpine Moodle is a lightweight version of the Moodle Learning Management System (LMS) tailored to run efficiently on Alpine Linux. Moodle is widely used for creating and managing online learning environments. This version is optimized for low-resource environments and ensures faster performance with a smaller footprint.
 
