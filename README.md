@@ -39,7 +39,7 @@ OpenShot Video Editor is like your friendly, free video-editing buddy! It’s an
 Virtual Classroom (VCR) is a term for online environments used for live teaching and interaction. Many platforms, like BigBlueButton or Zoom, provide VCR functionalities, such as live video, screen sharing, and collaborative tools.
 
 **Guide:**
-- [VCR](https://vcr.learn.ac.lk/userguide/)
+- [VCR](https://github.com/LEARN-LK/VCR)
 
 
 <!-- ### **6. CapCut Video Editor**
