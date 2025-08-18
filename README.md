@@ -26,7 +26,7 @@ WordPress is a popular open-source content management system (CMS) used to build
 **Guide:**
 - [koha](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/koha.md)
 
-### **4. OpenShot Video Editor**  - not completed 
+### **4. OpenShot Video Editor**  
 **Description:**
 OpenShot Video Editor is like your friendly, free video-editing buddy! It’s an open-source program that works on Linux, Mac, Windows, and ChromeOS, perfect for beginners or pros. Started in 2008 by Jonathan Thomas, it’s got a drag-and-drop vibe, supports tons of video/audio formats, and leaves no watermarks. Whether you’re editing a YouTube vlog or a family video, OpenShot makes it easy .
 
