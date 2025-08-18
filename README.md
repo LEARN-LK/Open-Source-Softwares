@@ -76,3 +76,7 @@ Indico handles everything from **event creation** and **abstract submission** to
 
 **Guide**
 - [Indico](https://github.com/LEARN-LK/Indico/edit/main/README.md)
+
+### **8. Video On Demand (OBS Studio).
+**Description**
+**OBS Studio** -
