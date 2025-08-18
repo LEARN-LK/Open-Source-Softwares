@@ -22,9 +22,10 @@ WordPress is a popular open-source content management system (CMS) used to build
 - [Practice Wordpress in your own Computer](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/Practice-Wordpress.md)
 - [Using WordPress, build your own website](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/build-website.md)
 - [Site Backup and Restore](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/Site-Backup%26Restore.md)
+<!--
 ### **3.  Koha Library Management System** 
 **Guide:**
-- [koha](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/koha.md)
+- [koha](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/koha.md)  -->
 
 ### **4. OpenShot Video Editor**  
 **Description:**
