@@ -1,145 +1,172 @@
-## Practice Wordpress in VirtualBox
 
-### Step-by-Step Guide to Share Alpine Linux `.OVA` File with Wordpress Preconfigured  
 
-This guide explains how to set up a `.vdi` file with Alpine Linux, configure it for sharing, and provide instructions for others to use it in VirtualBox.
+#  Practice WordPress in VirtualBox / UTM
 
----
-
-## **Step 1: Download the WordPress OVA File**
-1. Open the Google Drive link:  
-   👉 [Download OVA File](https://drive.google.com/file/d/1KuV93lV0gh0kq377uJbFrM3rEg8Z2xAI/view?usp=drive_link)
-2. Click **Download** to save the `.OVA` file to your computer.
+This guide explains how to set up and access a preconfigured **WordPress VM** using VirtualBox or UTM.
 
 ---
 
-## **Step 2: Download and Install VirtualBox**
-1. **Download VirtualBox** from the official site:  
-   👉 [https://www.virtualbox.org/](https://www.virtualbox.org/)
-2. Install VirtualBox by following the on-screen instructions.
+## **Part 1: Download and Install the Virtual Machine**
+
+### **Step 1: Download the VM**
+
+* **VirtualBox Users (.OVA)**:
+
+  1. Open the Google Drive link:
+      [Download OVA File](https://drive.google.com/file/d/1KuV93lV0gh0kq377uJbFrM3rEg8Z2xAI/view?usp=drive_link)
+  2. Click **Download** to save the `.OVA` file.
+
+* **UTM Users (.UTM)**:
+
+  1. Open the Google Drive link for the UTM file.
+[Download UTM File](https://drive.google.com/file/d/1byVEVpOK9KJ1RsvgZxqcdPJErvls141t/view?usp=sharing)
+  2. Download the `.UTM` file to your Mac.
 
 ---
 
-## **Step 3: Import the OVA File into VirtualBox**
-1. Open **VirtualBox**.
-2. Click **File** → **Import Appliance**.
-3. Click **Choose File** and **select** the downloaded `.OVA` file.
-4. Click **Next**.
-5. Review settings (**CPU, RAM, Network**) and adjust if needed.
-6. Click **Import** and wait for the process to complete.
+### **Step 2: Install the Virtualization Software**
+
+* **VirtualBox (Windows/Linux/macOS Intel/AMD)**:
+
+  1. Download from [VirtualBox Official Site](https://www.virtualbox.org/)
+  2. Install using default options.
+
+* **UTM (macOS Apple Silicon M1/M2/M3)**:
+
+  1. Download from [UTM Official Site](https://mac.getutm.app/)
+  2. Open the `.dmg` file and drag **UTM.app** to Applications.
 
 ---
 
-## **Step 4: Start the WordPress VM**
-1. In VirtualBox, select the **imported VM**.
-2. Click **Start** to boot the VM.
-   Log in using:
-   - **Username**: `learn`
-   - **Password**: `wd123`
+## **Part 2: Import the VM**
+
+* **VirtualBox**:
+
+  1. Open VirtualBox → **File > Import Appliance**.
+  2. Select the downloaded `.OVA` file → Click **Next**.
+  3. Review settings (CPU, RAM, Network) → Click **Import**.
+
+* **UTM**:
+
+  1. Open UTM → **File > Import Virtual Machine** or click **+**.
+  2. Select the downloaded `.UTM` file.
+  3. The VM appears in the UTM Library.
 
 ---
 
-## **Step 5: Access WordPress**
+## **Part 3: Start the VM**
 
-#### **5. Find the VM IP Address**:
-1. Inside the VM, type:
+1. Select the VM → Click **Start** (VirtualBox) or **Play ▶** (UTM).
+2. Log in with the VM credentials:
+
+   * **Username**: `learn`
+   * **Password**: `wd123`
+
+---
+
+## **Part 4: Configure Networking**
+
+1. **VirtualBox only:** Go to VM **Settings → Network**.
+2. Set **Attached to** = **Bridged Adapter**.
+3. Ensure the VM is **running** before accessing WordPress.
+
+---
+
+## **Part 5: Find the VM IP Address**
+
+1. Log into the VM.
+2. Run:
+
    ```bash
-   ip addr
+   ip addr show
    ```
-2. Note the IP address (e.g., `192.168.1.10`).
-
-
-
-#### **6. Map Wordpress to a Hostname on Host Machine**:
-- On the host machine, edit the `hosts` file to map the VM's IP to a hostname.
+3. Look for the `inet` entry under your network adapter (example: `192.168.1.10`).
 
 ---
 
-### **Edit Hosts File**
+## **Part 6: Map WordPress to a Hostname**
 
-#### **Windows**:
-1. Path:  
-   `C:\Windows\System32\drivers\etc\hosts`
-2. Open Notepad as an administrator and add your VM IP: eg:
-   ```
-   192.168.1.10 mywordpress.test.learn.ac.lk
-   ```
+We will map the IP to `mywordpress.test.learn.ac.lk` so you can access WordPress from the host browser.
 
-#### **MacOS**:
-1. Path:  
-   `/private/etc/hosts`
-2. Open a terminal and edit the file:
-   ```bash
-   sudo nano /private/etc/hosts
-   ```
-3. Add:
-   ```
-   192.168.1.10 mywordpress.test.learn.ac.lk
-   ```
+### **macOS / Linux**
 
-#### **Linux**:
-1. Path:  
-   `/etc/hosts`
-2. Edit the file with:
+1. Open a terminal.
+2. Edit hosts file:
+
    ```bash
    sudo nano /etc/hosts
    ```
 3. Add:
+
    ```
-   192.168.1.10 mywordpress.test.learn.ac.lk
+   192.168.1.10   mywordpress.test.learn.ac.lk
+   ```
+4. Save in nano:
+
+   * **Ctrl + O** → Enter → **Ctrl + X**
+5. Verify:
+
+   ```bash
+   cat /etc/hosts
+   ```
+
+### **Windows**
+
+1. Open **Notepad as Administrator**.
+2. Open file:
+
+   ```
+   C:\Windows\System32\drivers\etc\hosts
+   ```
+3. Add:
+
+   ```
+   192.168.1.10   mywordpress.test.learn.ac.lk
+   ```
+4. Save (Ctrl + S)
+5. Flush DNS:
+
+   ```cmd
+   ipconfig /flushdns
    ```
 
 ---
-### **7. Access Wordpress site from the Host Machine**:
+
+## **Part 7: Access WordPress**
+
 1. Open a browser on the host machine.
 2. Navigate to:
+
    ```
    http://mywordpress.test.learn.ac.lk
    ```
+3. WordPress should load successfully.
 
 ---
 
+## **Part 8: WordPress Login (Dashboard)**
 
-### Notes for Users:
-- Ensure VirtualBox's network settings are set to **Bridged Adapter**.
-- Ensure the VM is running before accessing Wordpress site.
-- Default credentials for the VM:
-  - **Username**: `learn`
-  - **Password**: `wd123`
+* Go to:
 
-This guide ensures users can easily import the `.ova` file, configure the VM, and start practicing Wordpress without additional setup.
+  ```
+  http://mywordpress.test.learn.ac.lk/wp-admin
+  ```
+* Login credentials:
+
+  * **Username**: `admin`
+  * **Password**: `wp-admin@123` *(example — replace with actual if different)*
 
 ---
-<!--
- ### **Part 2: Troubleshooting**
 
-Site Not Loading Properly:
+## **Important Notes**
 
-Verify nginx and php-fpm services are running:
- ``` bash
-rc-service nginx restart
-rc-service php-fpm82 restart
-```
-Error Messages:
+* Make sure **Bridged Adapter** is selected (VirtualBox).
+* VM must be **running** before accessing WordPress.
+* Default VM credentials:
 
-Check logs:
-``` bash
+  * **Username**: `learn`
+  * **Password**: `wd123`
+* Hostname mapping is necessary for friendly access.
 
-tail -f /var/log/nginx/error.log
-```
-
-Renew DHCP Lease on Alpine Linux
-``` bash
-/etc/init.d/networking restart
-```
-then follow [Step 5](https://github.com/LEARN-LK/lms/blob/master/Practice-Moodle-VirtualBox.md#5-find-the-vm-ip-address)
-
-
--->
-
-
-
-
-
-
+---
 
