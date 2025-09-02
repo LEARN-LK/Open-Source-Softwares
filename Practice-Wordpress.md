@@ -153,8 +153,8 @@ We will map the IP to `mywordpress.test.learn.ac.lk` so you can access WordPress
   ```
 * Login credentials:
 
-  * **Username**: `admin`
-  * **Password**: `wp-admin@123` *(example — replace with actual if different)*
+  * **Username**: `learn`
+  * **Password**: `wd123` *(example — replace with actual if different)*
 
 ---
 
