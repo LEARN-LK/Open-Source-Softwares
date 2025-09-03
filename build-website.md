@@ -43,10 +43,35 @@ Here are the required plugins:
 ---
 
 ### **Step 4: Create the Homepage & Set It as the Default Page**  
-1. Go to **Pages (DashBoard) → Add New**, name it **"Home"**, and click **Publish**.  
-2. Go to **Settings → Reading**, select **"A static page"**, and choose **"Home"**.
+
+1. Create a **“Home”** Page in WordPress
+
+2. In your WordPress dashboard, go to: **Pages → Add New**
+
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/001-page-add.png" alt="image" style="max-width: 100%;width: 500px;">
+
+3. If a setup pop-up window appears, just close it.
+
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/002-close-choose-pattern.png" alt="image" style="max-width: 100%;width: 500px;">
+
+4. In the page title field, type: **Home**
+
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/003-rename-thepage.png" alt="image" style="max-width: 100%;width: 500px;">
+
+
+5. Click the **Publish button** (top right corner).
+
+6. Once the page is published, click the **WordPress logo / Dashboard link (top-left corner)** to go back to the main Dashboard.
+
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/005-back-todashbaord.png" alt="image" style="max-width: 100%;width: 500px;">
+
+7. Go to **Settings → Reading**, select **"A static page"**, and choose **"Home"**.
    <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/Reading.png" alt="image" style="max-width: 100%;width: 500px;">
    <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/Static.png" alt="image" style="max-width: 100%;width: 500px;">
+
+8. Click Save
+
+   <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/2.1-then-click-save.png" alt="image" style="max-width: 100%;width: 500px;">
 ---
 
 ### **Step 5: Build Each Section of the Homepage**  
