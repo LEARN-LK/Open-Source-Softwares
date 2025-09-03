@@ -83,7 +83,13 @@ Now, we will create each section based on your wireframe.
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-01.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-02.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
-  
+
+- Once you come to the page, click on the Learn-WP
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/step%204.5%20click%20on%20the%20page%20once.png" alt="image" style="max-width: 100%;width: 500px;">
+
+- then click again on the Learn-WP to get the menu
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/step%204.6%20click%20edit%20template.png" alt="image" style="max-width: 100%;width: 500px;">
+
 - Click on **Site Identity (⋮)** [5] → **Delete it**[6].
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-03.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
   
