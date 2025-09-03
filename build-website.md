@@ -16,7 +16,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ### **Step 1: Set Up WordPress**  
 1. Log in to the WordPress dashboard by going to **yourdomain.com/wp-admin**.
-   - eg: mywordpress.test.learn.ac.lk/wp-admin
+   - eg: (http://mywordpress.test.learn.ac.lk/wp-admin)
 
 ---
 
@@ -27,7 +27,7 @@ Here’s a step-by-step guide to creating your website using WordPress based on 
 
 ---
 
-### **Step 3 : Install Essential Plugins**  
+### **Step 3: Install Essential Plugins**  
 To install a plugin:  
 1. Go to **Plugins → Add New**.  
 2. Search for the plugin name.  
