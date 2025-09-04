@@ -50,7 +50,7 @@ Here are the required plugins:
 
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/001-page-add.png" alt="image" style="max-width: 100%;width: 500px;">
 
-3. If a setup pop-up window appears, just close it.
+3. If a setup pop-up window appears, close it.
 
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/002-close-choose-pattern.png" alt="image" style="max-width: 100%;width: 500px;">
 
@@ -117,8 +117,8 @@ Now, we will create each section based on your wireframe.
 1. Go to **Dashboard** [12] → **Pages**[13] → **Add New**[14].
 <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-09.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
-3. Choose the design [15], then Create and publish these pages [16]:  
-   - **Service**  
+3. Choose the design [15], then create and publish these pages [16]:  
+   - **Services**  
    - **Contact**  
    - **About**
 
