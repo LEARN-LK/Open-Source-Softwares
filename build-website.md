@@ -108,6 +108,10 @@ Now, we will create each section based on your wireframe.
  
   <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/wp-08.png?raw=true" alt="image" style="max-width: 100%;width: 500px;">
 
+- Then Logo > Click on **Move left**
+
+   <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/move-left.png" alt="image" style="max-width: 100%;width: 500px;">
+  
 ---
 
 
