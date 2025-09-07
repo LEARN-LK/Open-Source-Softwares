@@ -183,15 +183,23 @@ Now, we will create each section based on your wireframe.
 
 ---
 
-#### **5: Our Services Section (Four Columns)**  
-1. In the **Site Editor**, go to the **Homepage** template.  
-2. Click **+ (Add Block)** and add a **Columns block** (select the **four-column layout**).  
-3. In each column, do the following:  
-   - Click **+ (Add Block)** and insert an **Image block** (upload an image for the service).  
-   - Click **+ (Add Block)** and insert a **Paragraph block** (write a short description for the service).  
-4. Click **Save** to apply changes.  
+
+#### **5. Our Services Section (Four Columns)**
+
+1. In the **Site Editor**, go to the **Homepage** template.
+2. Click **+ (Add Block)** and add a **Columns block**.
+3. By default, you may only see 2 or 3 columns. To make **4 columns**:
+   * Select the **Columns block**.
+   * In the **block toolbar or settings panel (right sidebar)**, adjust the number of columns to **4**.
+4. Now, inside each column:
+   * Click **+ (Add Block)** and insert an **Image block** (upload a service image).
+   * Below the image, click **+ (Add Block)** and insert a **Paragraph block** (add a short description of the service).
+5. Repeat for all 4 columns.
+6. Click **Save** to apply changes.
 
 ---
+
+
 
 #### **6: Two-Column Section (Image & Text)**  
 1. In the **Site Editor**, navigate to the **Homepage** template.  
