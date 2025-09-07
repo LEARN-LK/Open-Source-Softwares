@@ -188,17 +188,25 @@ Now, we will create each section based on your wireframe.
 
 1. In the **Site Editor**, go to the **Homepage** template.
 2. Click **+ (Add Block)** and add a **Columns block**.
-3. By default, you may only see 2 or 3 columns. To make **4 columns**:
-   * Select the **Columns block**.
-   * In the **block toolbar or settings panel (right sidebar)**, adjust the number of columns to **4**.
-4. Now, inside each column:
+3. **Select a Column Layout**
+   * WordPress shows default presets: **Two columns, Three columns**, etc.
+   * Choose **Two columns** (don’t worry—you’ll adjust it next).
+4. **Open Column Settings**
+   * Click the **Columns block** (the parent block, not the individual column).
+   * Look at the **right sidebar** (Block settings).
+   * If you don’t see the sidebar, click the ⚙️ **settings gear** icon on the top-right.
+5. **Adjust Number of Columns**
+   * In the sidebar, you should see **“Columns”** or **“Number of columns”**.
+   * Use the **arrows** or **type 4** to set it to **4 columns**.
+
+6. Now, inside each column:
    * Click **+ (Add Block)** and insert an **Image block** (upload a service image).
    * Below the image, click **+ (Add Block)** and insert a **Paragraph block** (add a short description of the service).
-5. Repeat for all 4 columns.
-6. Click **Save** to apply changes.
+7. Repeat for all 4 columns.
+8. Click **Save** to apply changes.
+
 
 ---
-
 
 
 #### **6: Two-Column Section (Image & Text)**  
