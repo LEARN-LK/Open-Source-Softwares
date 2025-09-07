@@ -188,16 +188,21 @@ Now, we will create each section based on your wireframe.
 
 1. In the **Site Editor**, go to the **Homepage** template.
 2. Click **+ (Add Block)** and add a **Columns block**.
-3. **Select a Column Layout**
+3. Select a Column Layout
    * WordPress shows default presets: **Two columns, Three columns**, etc.
    * Choose **Two columns** (don’t worry—you’ll adjust it next).
-4. **Open Column Settings**
+4. Open Column Settings
    * Click the **Columns block** (the parent block, not the individual column).
+
+ <img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/2-colunm.png" alt="image" style="max-width: 100%;width: 600px;">
+   
    * Look at the **right sidebar** (Block settings).
    * If you don’t see the sidebar, click the ⚙️ **settings gear** icon on the top-right.
-5. **Adjust Number of Columns**
+5. Adjust Number of Columns
    * In the sidebar, you should see **“Columns”** or **“Number of columns”**.
    * Use the **arrows** or **type 4** to set it to **4 columns**.
+
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/col-settings.png" alt="image" style="max-width: 100%;width: 400px;">
 
 6. Now, inside each column:
    * Click **+ (Add Block)** and insert an **Image block** (upload a service image).
