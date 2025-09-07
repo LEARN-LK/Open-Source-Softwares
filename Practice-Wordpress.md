@@ -13,13 +13,20 @@ This guide explains how to set up and access a preconfigured **WordPress VM** us
 * **VirtualBox Users (.OVA)**:
 
   1. Open the Google Drive link:
-      [Download OVA File](https://drive.google.com/file/d/1KuV93lV0gh0kq377uJbFrM3rEg8Z2xAI/view?usp=drive_link)
+      [Download OVA File](https://drive.google.com/file/d/1KuV93lV0gh0kq377uJbFrM3rEg8Z2xAI/view?usp=sharing&hl=en&tab=t.0)
+    <!--  [Download OVA File](https://drive.google.com/file/d/1KuV93lV0gh0kq377uJbFrM3rEg8Z2xAI/view?usp=drive_link)-->
+
   2. Click **Download** to save the `.OVA` file.
+
+       
 
 * **UTM Users (.UTM)**:
 
   1. Open the Google Drive link for the UTM file.
-[Download UTM File](https://drive.google.com/file/d/1byVEVpOK9KJ1RsvgZxqcdPJErvls141t/view?usp=sharing)
+[Download UTM File](https://drive.google.com/file/d/1byVEVpOK9KJ1RsvgZxqcdPJErvls141t/view?usp=sharing&hl=en&tab=t.0)
+
+<!-- [Download UTM File](https://drive.google.com/file/d/1byVEVpOK9KJ1RsvgZxqcdPJErvls141t/view?usp=sharing)-->
+
   2. Download the `.UTM` file to your Mac.
 
 ---
