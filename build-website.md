@@ -202,7 +202,7 @@ Now, we will create each section based on your wireframe.
    * In the sidebar, you should see **“Columns”** or **“Number of columns”**.
    * Use the **arrows** or **type 4** to set it to **4 columns**.
 
-<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/col-settings.png" alt="image" style="max-width: 100%;width: 400px;">
+<img src="https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/img/col-settings.png" alt="image" style="max-width: 100%;width: 250px;">
 
 6. Now, inside each column:
    * Click **+ (Add Block)** and insert an **Image block** (upload a service image).
