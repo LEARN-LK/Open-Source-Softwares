@@ -98,10 +98,15 @@ We will map the IP to `mywordpress.test.learn.ac.lk` so you can access WordPress
 ### **macOS / Linux**
 
 1. Open a terminal.
-2. Edit hosts file:
+2. Edit hosts file(Linux):
 
    ```bash
    sudo nano /etc/hosts
+   ```
+   Edit hosts file(MacOS):
+
+   ```bash
+   sudo nano /private/etc/hosts
    ```
 3. Add:
 
