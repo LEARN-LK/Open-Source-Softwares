@@ -77,6 +77,17 @@ Indico handles everything from **event creation** and **abstract submission** to
 **Guide**
 - [Indico](https://github.com/LEARN-LK/Indico/edit/main/README.md)
 
-### **8. Video On Demand (OBS Studio).
+### **Itube**
+**Description:**
+**Itube**  Modern, fully featured open source video and media CMS A Content Management System (CMS) for digital media with
+ - Multiple media classification options
+ - Advanced users management
+
+**Guide**
+- [LTUBE](https://github.com/LEARN-LK/LTUBE/tree/main)
+
+
+
+<!-- ### **8. Video On Demand (OBS Studio).
 **Description**
-**OBS Studio** -
+**OBS Studio** -  -->
