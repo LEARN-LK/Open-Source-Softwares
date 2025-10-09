@@ -23,7 +23,7 @@ apk add nginx php82 php82-fpm php82-mysqli php82-xml php82-mbstring php82-curl p
 
 2. Create a new Nginx configuration file for WordPress:
    ```bash
-   nano /etc/nginx/conf.d/wordpress.conf
+   nano /etc/nginx/http.d/wordpress.conf
    ```
    Add the following configuration:
    ```nginx
