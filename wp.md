@@ -133,6 +133,7 @@ rc-service php-fpm82 restart
    ```bash
    rc-service mariadb setup
    rc-service mariadb start
+   rc-update add mariadb
    mysql_secure_installation
    ```
 
