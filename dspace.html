@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN DSpace as a Service Request Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f4; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        h1, h2 { color: #333; text-align: center; }
+        .section { margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], input[type="tel"] { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .signature { font-style: italic; }
+        .buttons { margin-top: 20px; text-align: center; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; }
+        button:hover { background-color: #45a049; }
+        #signature-canvas { border: 1px solid #ccc; cursor: crosshair; }
+        #success, #error { display: none; text-align: center; }
+        .hidden { display: none; }
+        #pdf-link { display: block; margin-top: 10px; text-align: center; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>LEARN</h1>
+        <h2>DSpace as a Service</h2>
+        <h3>Service Request Form</h3>
+        <p>LEARN DSpace as a Service is provided as a central publication workflow management system, with individual access granted to each department for managing and depositing their publications. Separate DSpace instances are not provided but a workspace from the central system is provided for each department for production use. Workspace for testing/temporary use are not provided. The DSpace service runs on LEARN FOSS HA cloud infrastructure and comes without a Service Level Agreement (SLA), but is maintained on a best-effort basis by the LEARN engineering.</p>
+        <p>All the LEARN FOSS services can be accessed from anywhere as long as you are connected to the Internet. The major local ISPs currently provide free data for accessing LEARN FOSS services when you access them from your private Internet connection.</p>
+        <form id="dspace-form">
+            <div class="section">
+                <h3>Section 1: Faculty Information</h3>
+                <div class="form-group">
+                    <label for="Faculty Name">Faculty Name:</label>
+                    <input type="text" id="Faculty Name" name="Faculty Name" required>
+                </div>
+                <h4>Department Details (Add one or more departments)</h4>
+                <table id="departments-table">
+                    <thead>
+                        <tr>
+                            <th>Department Name</th>
+                            <th>Departmental Admin/Coordinator Name</th>
+                            <th>Contact Number (WhatsApp)</th>
+                            <th>EduID / SSO Login</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="Department Name[]" required></td>
+                            <td><input type="text" name="Departmental Admin/Coordinator Name[]" required></td>
+                            <td><input type="tel" name="Contact Number (WhatsApp)[]" required></td>
+                            <td><input type="text" name="EduID / SSO Login[]" required></td>
+                            <td><button type="button" class="remove-row">Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" id="add-row">Add Another Department</button>
+            </div>
+            <div class="section">
+                <h3>Section 5: Declaration</h3>
+                <p>I hereby certify that the above information provided is accurate and correct, and also understand the LEARN FOSS SLA terms mentioned above.</p>
+                <div class="form-group">
+                    <label>Signature Method:</label>
+                    <div>
+                        <input type="radio" id="draw-signature" name="signature-method" value="draw" checked>
+                        <label for="draw-signature">Draw Signature</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="upload-signature" name="signature-method" value="upload">
+                        <label for="upload-signature">Upload Signature</label>
+                    </div>
+                </div>
+                <div id="draw-signature-section" class="form-group">
+                    <label for="signature-canvas" class="signature">Draw Signature (Dean/Faculty):</label>
+                    <canvas id="signature-canvas" width="300" height="100"></canvas>
+                    <button type="button" id="clear-signature">Clear Signature</button>
+                    <input type="hidden" id="Signature (Dean/Faculty)" name="Signature (Dean/Faculty)">
+                </div>
+                <div id="upload-signature-section" class="form-group hidden">
+                    <label for="signature-upload" class="signature">Upload Signature (Dean/Faculty):</label>
+                    <input type="file" id="signature-upload" name="signature-upload" accept="image/*">
+                    <input type="hidden" id="Signature (Dean/Faculty)" name="Signature (Dean/Faculty)">
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit">Submit to Google Sheets</button>
+            </div>
+        </form>
+        <div id="success">Form submitted successfully! <a id="pdf-link" href="#" download="DSpace_Service_Request.pdf">Download PDF</a></div>
+        <div id="error">Error submitting form. Check console for details.</div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const { jsPDF } = window.jspdf;
+            // Add row to table
+            const addRowButton = document.getElementById('add-row');
+            if (addRowButton) {
+                addRowButton.addEventListener('click', () => {
+                    const tbody = document.querySelector('#departments-table tbody');
+                    if (tbody) {
+                        const newRow = document.createElement('tr');
+                        newRow.innerHTML = `
+                            <td><input type="text" name="Department Name[]" required></td>
+                            <td><input type="text" name="Departmental Admin/Coordinator Name[]" required></td>
+                            <td><input type="tel" name="Contact Number (WhatsApp)[]" required></td>
+                            <td><input type="text" name="EduID / SSO Login[]" required></td>
+                            <td><button type="button" class="remove-row">Remove</button></td>
+                        `;
+                        tbody.appendChild(newRow);
+                        console.log('Added new department row');
+                    } else {
+                        console.error('Table body not found');
+                    }
+                });
+            } else {
+                console.error('Add row button not found');
+            }
+            // Remove row from table
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('remove-row')) {
+                    e.target.closest('tr').remove();
+                    console.log('Removed department row');
+                }
+            });
+            // Signature canvas setup
+            const canvas = document.getElementById('signature-canvas');
+            let signatureData = '';
+            if (canvas) {
+                const ctx = canvas.getContext('2d');
+                let isDrawing = false;
+                canvas.addEventListener('mousedown', (e) => {
+                    isDrawing = true;
+                    ctx.beginPath();
+                    ctx.moveTo(e.offsetX, e.offsetY);
+                    ctx.strokeStyle = '#000000';
+                    ctx.lineWidth = 1;
+                    console.log('Mouse down at:', e.offsetX, e.offsetY);
+                });
+                canvas.addEventListener('mousemove', (e) => {
+                    if (isDrawing) {
+                        ctx.lineTo(e.offsetX, e.offsetY);
+                        ctx.stroke();
+                    }
+                });
+                canvas.addEventListener('mouseup', () => {
+                    isDrawing = false;
+                    signatureData = canvas.toDataURL();
+                    const signatureInput = document.getElementById('Signature (Dean/Faculty)');
+                    if (signatureInput) {
+                        signatureInput.value = signatureData.substring(0, 50) + '...';
+                        console.log('Signature captured:', signatureInput.value);
+                    } else {
+                        console.error('Signature input not found');
+                    }
+                });
+                canvas.addEventListener('mouseout', () => {
+                    isDrawing = false;
+                });
+                document.getElementById('clear-signature').addEventListener('click', () => {
+                    if (ctx) {
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        signatureData = '';
+                        const signatureInput = document.getElementById('Signature (Dean/Faculty)');
+                        if (signatureInput) {
+                            signatureInput.value = '';
+                            console.log('Signature cleared');
+                        }
+                    }
+                });
+            } else {
+                console.error('Canvas not found');
+            }
+            // Toggle signature method
+            const signatureRadios = document.querySelectorAll('input[name="signature-method"]');
+            if (signatureRadios.length > 0) {
+                signatureRadios.forEach(radio => {
+                    radio.addEventListener('change', function() {
+                        document.getElementById('draw-signature-section').classList.toggle('hidden', this.value !== 'draw');
+                        document.getElementById('upload-signature-section').classList.toggle('hidden', this.value !== 'upload');
+                        const signatureInput = document.getElementById('Signature (Dean/Faculty)');
+                        if (signatureInput && this.value === 'upload') {
+                            signatureInput.value = '';
+                            console.log('Switched to:', this.value);
+                        }
+                    });
+                });
+            } else {
+                console.error('Signature method radios not found');
+            }
+            // Handle upload
+            const signatureUpload = document.getElementById('signature-upload');
+            if (signatureUpload) {
+                signatureUpload.addEventListener('change', (e) => {
+                    const file = e.target.files[0];
+                    const signatureInput = document.getElementById('Signature (Dean/Faculty)');
+                    if (file && signatureInput) {
+                        signatureInput.value = `Uploaded: ${file.name}`;
+                        console.log('File uploaded:', file.name);
+                    }
+                });
+            } else {
+                console.error('Signature upload input not found');
+            }
+            // Submit form and generate PDF
+            const form = document.getElementById('dspace-form');
+            if (form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    const formData = new FormData(form);
+                    const data = {};
+                    formData.forEach((value, key) => {
+                        if (key.includes('[]')) {
+                            const baseKey = key.replace('[]', '');
+                            data[baseKey] = data[baseKey] || [];
+                            data[baseKey].push(value);
+                        } else {
+                            data[key] = value;
+                        }
+                    });
+                    // Convert department arrays to objects
+                    const departments = [];
+                    const deptFields = ['Department Name', 'Departmental Admin/Coordinator Name', 'Contact Number (WhatsApp)', 'EduID / SSO Login'];
+                    const maxLength = Math.max(...deptFields.map(field => (data[field] || []).length));
+                    for (let i = 0; i < maxLength; i++) {
+                        const dept = {};
+                        deptFields.forEach(field => {
+                            dept[field] = data[field][i] || '';
+                        });
+                        departments.push(dept);
+                    }
+                    data.departments = JSON.stringify(departments);
+                    // Ensure signature is set
+                    if (!data['Signature (Dean/Faculty)']) {
+                        const method = document.querySelector('input[name="signature-method"]:checked').value;
+                        data['Signature (Dean/Faculty)'] = method === 'draw' ? (signatureData || 'No signature drawn') : 'No file uploaded';
+                    } else if (data['Signature (Dean/Faculty)'] === '') {
+                        data['Signature (Dean/Faculty)'] = signatureData.substring(0, 50) + '...' || 'No signature drawn';
+                    }
+                    console.log('Form data to be sent:', JSON.stringify(data, null, 2));
+                    try {
+                        const response = await fetch('https://script.google.com/macros/s/AKfycbyBMyKUGvhjMgp6Vcehs-M-KR9kdi0rzX8ZiQgDmAPX53HWHoAiqpsjjfCEP1r1gjI/exec', {
+                            method: 'POST',
+                            body: new URLSearchParams(data)
+                        });
+                        console.log('Fetch response status:', response.status);
+                        const result = await response.json();
+                        console.log('Response data:', result);
+                        if (result.result === 'success') {
+                            const doc = new jsPDF();
+                            doc.setFontSize(12);
+                            doc.text('LEARN DSpace as a Service', 105, 20, { align: 'center' });
+                            doc.text('Service Request Form', 105, 30, { align: 'center' });
+                            doc.setFontSize(10);
+                            doc.text('LEARN DSpace as a Service is provided as a central publication workflow management system...', 10, 40, { maxWidth: 190 });
+                            doc.text('All the LEARN FOSS services can be accessed from anywhere as long as you are connected to the Internet...', 10, 60, { maxWidth: 190 });
+                            doc.text('Section 1: Faculty Information', 10, 80);
+                            doc.text(`Faculty Name: ${data['Faculty Name'] || ''}`, 10, 90);
+                            doc.text('Department Details:', 10, 100);
+                            departments.forEach((dept, index) => {
+                                const yOffset = 110 + (index * 40);
+                                doc.text(`Department ${index + 1}:`, 15, yOffset);
+                                doc.text(`Name: ${dept['Department Name'] || ''}`, 20, yOffset + 5);
+                                doc.text(`Admin/Coordinator: ${dept['Departmental Admin/Coordinator Name'] || ''}`, 20, yOffset + 10);
+                                doc.text(`Contact: ${dept['Contact Number (WhatsApp)'] || ''}`, 20, yOffset + 15);
+                                doc.text(`EduID/SSO: ${dept['EduID / SSO Login'] || ''}`, 20, yOffset + 20);
+                            });
+                            const declarationY = 110 + (departments.length * 40);
+                            doc.text('Section 5: Declaration', 10, declarationY);
+                            doc.text('I hereby certify that the above information provided is accurate and correct, and also understand the LEARN FOSS SLA terms mentioned above.', 10, declarationY + 10, { maxWidth: 190 });
+                            doc.text(`Signature (Dean/Faculty): ${data['Signature (Dean/Faculty)'] || ''}`, 10, declarationY + 30);
+                            doc.save('DSpace_Service_Request.pdf');
+                            document.getElementById('success').style.display = 'block';
+                            document.getElementById('error').style.display = 'none';
+                            document.getElementById('pdf-link').href = doc.output('bloburl');
+                            form.reset();
+                            if (canvas) {
+                                const ctx = canvas.getContext('2d');
+                                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                            }
+                        } else {
+                            throw new Error(result.error || 'Unknown error from server');
+                        }
+                    } catch (error) {
+                        console.error('Submission error:', error);
+                        document.getElementById('error').innerText = `Error submitting form: ${error.message}`;
+                        document.getElementById('error').style.display = 'block';
+                        document.getElementById('success').style.display = 'none';
+                    }
+                });
+            } else {
+                console.error('Form not found');
+            }
+        });
+    </script>
+</body>
+</html>
