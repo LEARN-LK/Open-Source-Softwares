@@ -75,7 +75,7 @@ DSpace is an open-source repository software platform used by institutions to st
 Indico handles everything from **event creation** and **abstract submission** to **registration**, **scheduling**, **payment processing**, and **certification** — all from a single web-based interface.
 
 **Guide**
-- [Indico](https://github.com/LEARN-LK/Indico/edit/main/README.md)
+- [Indico](https://github.com/LEARN-LK/Indico/blob/main/README.md)
 
 ### **8 . Itube**
 **Description:**
