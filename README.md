@@ -12,7 +12,7 @@ Alpine Moodle is a lightweight version of the Moodle Learning Management System 
 
 **Guide:**
 - [Moodle](https://github.com/LEARN-LK/lms/tree/master)
-- - [Dspace](https://github.com/LEARN-LK/Open-Source-Softwares/blob/main/dspace.html)
+
 
 ### **2. WordPress**
 **Description:**
